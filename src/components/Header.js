@@ -4,8 +4,8 @@ import Button from './button'
 
 const  Header = ({title}) =>  {
 
-const onClick=(e)=> {
-  console.log(e)
+const onClick=()=> {
+  console.log("click")
 }
 
 
