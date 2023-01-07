@@ -28,6 +28,10 @@ function App() {
     
 ]);
 
+const onDelete = (id)=>{
+  console.log("onDelete",id)
+}
+
 
   return (
     <div className="container">
