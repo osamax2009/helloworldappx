@@ -31,7 +31,21 @@ const loginfunction = async (email, password) => {
   }
 
 }
+const registerfunction = async (email, password,name) => {
+  try {
+ const res =    await createUserWithEmailAndPassword(auth, email, password ) ;
+  const user = res.user ;
+
+    console.log("user login successfuly");
+    alert("user login successfuly !!!! ");
+  } catch (err) {
+    console.error(err);
+    alert(err.message)
+  }
+
+}
 
 export {
-  loginfunction
+  loginfunction,
+  registerfunction
 }

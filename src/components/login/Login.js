@@ -2,11 +2,13 @@ import React from 'react'
 import { useState } from 'react'
 import  './Login.css'
 import {loginfunction} from '../../firebase'
+import { NavLink , useNavigate } from 'react-router-dom'
 
 
 const Login = () => {
   const [email , setEmail ] = useState("");
   const [password , setPassword ] = useState("");
+  const navigate = useNavigate();
 
   return (
     <div className='login'>
