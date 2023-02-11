@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import {Link} from 'react-router-dom'
 import {registerfunction } from '../../firebase'
+import  './Register.css' 
 
 const Register = () => {
     const [email, setemail] = useState("")
@@ -47,11 +48,11 @@ const Register = () => {
                 Register New Accoount
 
             </button>
-
-        </div>
-        <div className="">
+            <div className="">
             if you Already Have account ? <Link to="/" >Go To Login </Link>
             </div>
+        </div>
+        
       
     </div>
   )

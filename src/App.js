@@ -8,19 +8,22 @@ import {BrowserRouter as Router   , Route , Routes as Switch} from 'react-router
 
 import Login from './components/login/Login';
 import Register from './components/register/Register';
+import Home from './components/Home/Home';
 function App() {
 
   
 
   return (
-    <Router>
-      <Switch>
-        <Route exact path='/' element={<Login  />}/>
-        <Route exact path='/register' element={<Register  />}/>
 
-      </Switch>
+    <Home />
+    // <Router>
+    //   <Switch>
+    //     <Route exact path='/' element={<Login  />}/>
+    //     <Route exact path='/register' element={<Register  />}/>
 
-      </Router>
+    //   </Switch>
+
+    //   </Router>
 
 
   );
